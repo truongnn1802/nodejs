@@ -1,0 +1,57 @@
+<%- include('../partials/header.ejs')%>
+
+  <div class="container-fluid page-body-wrapper">
+    <%- include('../partials/sidebar.ejs')%>
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-center mb-4">Cập nhật sản phẩm</h4>
+              <form class='forms-sample' action="/update-product" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                  <input type="text" value="<%= data?.id%>" name="id" style="display: none;">
+                  <label for="name">Tên sản phẩm</label>
+                  <input type="text" value="<%= data?.name%>" class="form-control form-control-sm" id="name" name="name"
+                    placeholder="Tên sản phẩm">
+                </div>
+                <div class="form-group">
+                  <label for="idCate">Loại sản phẩm</label>
+                  <select style="border: solid 1px;" class="form-control form-control-sm" id="idCate" name="idCate">
+                    <option value>Chọn loại sản phẩm</option>
+                    <option value="1" <%=data?.idCate==="1" ? "selected" : "" %>>1</option>
+                    <option value="2" <%=data?.idCate==="2" ? "selected" : "" %>>2</option>
+                    <option value="3" <%=data?.idCate==="3" ? "selected" : "" %>>3</option>
+                    <option value="4" <%=data?.idCate==="4" ? "selected" : "" %>>4</option>
+                    <option value="5" <%=data?.idCate==="5" ? "selected" : "" %>>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="price">Giá</label>
+                  <input type="number" value="<%= data?.price%>" class="form-control form-control-sm" id="price"
+                    name="price" placeholder="Giá sản phẩm">
+                </div>
+                <div class="form-group">
+                  <label for="file-img">Tải ảnh lên</label>
+                  <input type="file" name="img" id="file-img" multiple style="display: none;">
+                  <div id="imgs">
+                    <% data?.imgs.map((img)=>{%>
+                      <img src="/uploads/<%= img%>" style="width:100px" />
+                      <%})%>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="desc">Mô tả sản phẩm</label>
+                  <textarea class="form-control form-control-sm" id="desc" name="desc"
+                    rows="6"><%= data?.desc%></textarea>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <button type="submit" class="btn btn-gradient-primary me-2">Cập nhật</button>
+                  <button class="btn btn-light">Cancel</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <%- include('../partials/footer.ejs')%>

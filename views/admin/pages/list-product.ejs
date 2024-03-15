@@ -1,0 +1,65 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid page-body-wrapper">
+        <%- include('../partials/sidebar.ejs')%>
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="card">
+                        <div class="card-body custom-scrollbar">
+                            <h4 class="card-title">Danh sách sản phẩm</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên sản phẩm</th>
+                                        <th>Hình ảnh</th>
+                                        <th>Mô tả sản phẩm</th>
+                                        <th>Đánh giá</th>
+                                        <th>Giá</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% products.map((product,index)=>{ %>
+                                        <tr>
+                                            <td>
+                                                <%= index +1 %>
+                                            </td>
+                                            <td>
+                                                <%= product.name %>
+                                            </td>
+                                            <td><img src="uploads/<%= product.imgs[0]%>" alt="product.name" /></td>
+                                            <td>
+                                                <%= product.desc %>
+                                            </td>
+                                            <td>
+                                                4.5/5
+                                            </td>
+                                            <td>
+                                                <%= product.price %>
+                                            </td>
+                                            <td>
+                                                <i data-id="<%= product.id %>" class="mdi mdi-delete-forever"
+                                                    style="color: #fe7c96;font-size: 20px;cursor: pointer;padding: 10px;"></i>
+                                                <i data-id='<%= product.id %>' class="mdi mdi-border-color"
+                                                    style="color: #b66dff;font-size: 20px;cursor: pointer;vertical-align: middle;"></i>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="pagination">
+                            <li><a href="#"><i class="mdi mdi-arrow-left"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class="mdi mdi-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

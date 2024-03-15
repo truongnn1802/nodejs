@@ -1,0 +1,29 @@
+<%- include('../partials/header.ejs')%>
+
+  <div class="container-fluid page-body-wrapper">
+    <%- include('../partials/sidebar.ejs')%>
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-center mb-4">Thêm mới danh mục</h4>
+              <form class='forms-sample' action="/create-category" method="POST">
+                <div class="form-group">
+                  <label for="name">Tên danh mục</label>
+                  <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Tên danh mục">
+                </div>
+                <div class="form-group">
+                  <label for="desc">Mô tả danh mục</label>
+                  <textarea class="form-control form-control-sm" id="desc" name="desc" rows="6"></textarea>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <button type="submit" class="btn btn-gradient-primary me-2">Thêm mới</button>
+                  <button class="btn btn-light">Cancel</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <%- include('../partials/footer.ejs')%>

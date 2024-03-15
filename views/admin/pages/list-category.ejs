@@ -1,0 +1,67 @@
+<%- include('../partials/header.ejs')%>
+    <div class="container-fluid page-body-wrapper">
+        <%- include('../partials/sidebar.ejs')%>
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="card">
+                        <div class="card-body custom-scrollbar">
+                            <h4 class="card-title">Danh sách danh mục</h4>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên danh mục</th>
+                                        <th>Mô tả danh mục</th>
+                                        <th>Số lượng sản phẩm</th>
+                                        <th>Ngày tạo</th>
+                                        <th>Ngày cập nhật</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% cates.map((cate,index)=>{ %>
+                                        <tr>
+                                            <td>
+                                                <%= index +1 %>
+                                            </td>
+                                            <td>
+                                                <%= cate.name %>
+                                            </td>
+                                            <td>
+                                                <%= cate.desc %>
+                                            </td>
+                                            <td>
+                                                <%= cate.count %>
+                                            </td>
+                                            <td>
+                                                <%= cate.date_cre %>
+                                            </td>
+                                            <td>
+                                                <%= cate.date_up %>
+                                            </td>
+                                            <td>
+                                                <i data-id="<%= cate.id %>" class="mdi mdi-delete-forever"
+                                                    style="color: #fe7c96;font-size: 20px;cursor: pointer;padding: 10px;"></i>
+                                                <i data-id='<%= cate.id %>' class="mdi mdi-border-color"
+                                                    style="color: #b66dff;font-size: 20px;cursor: pointer;vertical-align: middle;"></i>
+                                            </td>
+                                        </tr>
+                                        <% }) %>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="pagination">
+                            <li><a href="#"><i class="mdi mdi-arrow-left"></i></a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#"><i class="mdi mdi-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <%- include('../partials/footer.ejs')%>

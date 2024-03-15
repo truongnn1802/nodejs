@@ -1,0 +1,57 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item nav-profile">
+      <a href="#" class="nav-link">
+        <div class="nav-profile-image">
+          <img src="images/faces/face1.jpg" alt="profile">
+          <span class="login-status online"></span>
+          <!--change to offline or busy as needed-->
+        </div>
+        <div class="nav-profile-text d-flex flex-column">
+          <span class="font-weight-bold mb-2">David Grey. H</span>
+          <span class="text-secondary text-small">Project Manager</span>
+        </div>
+        <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">
+        <span class="menu-title">Dashboard</span>
+        <i class="mdi mdi-home menu-icon"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#ui-product" aria-expanded="false" aria-controls="ui-product">
+        <span class="menu-title">Quản lý sản phẩm</span>
+        <i class="mdi mdi-cart menu-icon"></i>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-product">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/list-product">Danh sách sản phẩm</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/add-product">Thêm mới</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="collapse" href="#ui-cate" aria-expanded="false" aria-controls="ui-cate">
+        <span class="menu-title">Quản lý danh mục</span>
+        <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="ui-cate">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item"> <a class="nav-link" href="/list-category">Quản lý danh mục</a></li>
+          <li class="nav-item"> <a class="nav-link" href="/add-category">Thêm mới</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/list-user">
+        <span class="menu-title">Danh sách người dùng</span>
+        <i class="mdi mdi-account menu-icon"></i>
+      </a>
+    </li>
+    
+  </ul>
+</nav>
