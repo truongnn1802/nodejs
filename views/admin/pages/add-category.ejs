@@ -7,14 +7,39 @@
           <div class="card">
             <div class="card-body">
               <h4 class="card-title text-center mb-4">Thêm mới danh mục</h4>
-              <form class='forms-sample' action="/create-category" method="POST">
-                <div class="form-group">
+              <form class='forms-sample' action="/admin/create-category" method="POST">
+                <div class="form-group" style="width: 100%;">
                   <label for="name">Tên danh mục</label>
                   <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Tên danh mục">
                 </div>
-                <div class="form-group">
+                <div class="form-group" style="width: 100%;">
                   <label for="desc">Mô tả danh mục</label>
                   <textarea class="form-control form-control-sm" id="desc" name="desc" rows="6"></textarea>
+                </div>
+                <div id="add-sub-cate" style="position: relative;margin-top: 10px;">
+                  <h6>Thêm danh mục con</h6>
+                  <div class="flex-align-center">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="cate_sub"
+                      placeholder="Nhập danh mục con"
+                    />
+                    
+                  </div>
+                  <span
+                    id="add-row"
+                    class="mdi mdi-plus-circle"
+                    style="
+                      font-size: 24px;
+                      cursor: pointer;
+                      color: #e9d3ff;
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                    "
+                  >
+                  </span>
                 </div>
                 <div style="display: flex; justify-content: center;">
                   <button type="submit" class="btn btn-gradient-primary me-2">Thêm mới</button>

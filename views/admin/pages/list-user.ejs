@@ -10,9 +10,8 @@
                                 <thead>
                                     <tr>
                                         <th>STT</th>
+                                        <th>Ảnh</th>
                                         <th>Tên</th>
-                                        <th>Năm sinh</th>
-                                        <th>Địa chỉ</th>
                                         <th>Số điện thoại</th>
                                         <th>Email</th>
                                         <th></th>
@@ -25,19 +24,16 @@
                                                 <%= index +1 %>
                                             </td>
                                             <td>
-                                                <%= user.name %>
+                                                <img src="/uploads/<%= user.avatar %>" alt="<%= user.username %>"/>
                                             </td>
                                             <td>
-                                                <%= user.date_of_birth %>
-                                            </td>
-                                            <td>
-                                                <%= user.address %>
+                                                <%= user.username %>
                                             </td>
                                             <td>
                                                 <%= user.phone %>
                                             </td>
                                             <td>
-                                                <%= user.email %>
+                                                <%= user.email%>
                                             </td>
                                             <td>
                                                 <i data-id="<%= user.id %>" class="mdi mdi-delete-forever"

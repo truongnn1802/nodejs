@@ -1,0 +1,63 @@
+<%- include('../partials/header')%>
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option" style="margin-top: 60px">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="breadcrumb__links">
+          <a href="/client"><i class="fa fa-home"></i> Trang chủ</a>
+          <span>Lịch sử mua hàng</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breadcrumb End -->
+
+<!-- Shop Cart Section Begin -->
+<section class="shop-cart spad">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h6 class="coupon__link">Đã mua thành công</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="shop__cart__table">
+          <table style="min-height: 200px">
+            <thead>
+              <tr>
+                <th>Tên</th>
+                <th>Hình ảnh</th>
+                <th>Bình luận</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="tblComplete"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h6 class="coupon__link">Đang chờ</h6>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="shop__cart__table">
+          <table style="min-height: 200px">
+            <thead>
+              <tr>
+                <th>Sản phẩm</th>
+              </tr>
+            </thead>
+            <tbody class="tblPending"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<%- include('../partials/footer')%>

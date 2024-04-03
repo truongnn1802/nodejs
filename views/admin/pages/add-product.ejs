@@ -1,49 +1,134 @@
 <%- include('../partials/header.ejs')%>
 
-  <div class="container-fluid page-body-wrapper">
-    <%- include('../partials/sidebar.ejs')%>
-      <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title text-center mb-4">Thêm mới sản phẩm</h4>
-              <form class='forms-sample' action="/create-product" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                  <label for="name">Tên sản phẩm</label>
-                  <input type="text" class="form-control form-control-sm" id="name" name="name" placeholder="Tên sản phẩm">
-                </div>
-                <div class="form-group">
-                  <label for="idCate">Loại sản phẩm</label>
-                  <select style="border: solid 1px;" class="form-control form-control-sm" id="idCate" name="idCate">
-                    <option value selected>Chọn loại sản phẩm</option>
-                    <% cates.map((cate,index)=>{ %>
-                      <option value="<%=cate.id%>"><%=cate.name%></option>
-                    <%})%>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="price">Giá</label>
-                  <input type="number" class="form-control form-control-sm" id="price" name="price" placeholder="Giá sản phẩm">
-                </div>
-                <div class="form-group">
-                  <label for="file-img">Tải ảnh lên</label>
-                  <input type="file" name="img" id="file-img" multiple style="display: none;">
-                  <div id="imgs">
-
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="desc">Mô tả sản phẩm</label>
-                  <textarea class="form-control form-control-sm" id="desc" name="desc" rows="6"></textarea>
-                </div>
-                <div style="display: flex; justify-content: center;">
-                  <button type="submit" class="btn btn-gradient-primary me-2">Thêm mới</button>
-                  <button class="btn btn-light">Cancel</button>
-                </div>
-              </form>
+<div class="container-fluid page-body-wrapper">
+  <%- include('../partials/sidebar.ejs')%>
+  <div class="main-panel">
+    <div class="content-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title text-center mb-4">Thêm mới sản phẩm</h4>
+          <form
+            class="forms-sample"
+            action="/admin/create-product"
+            method="POST"
+            enctype="multipart/form-data"
+            style="
+              display: flex;
+              flex-flow: wrap;
+              justify-content: space-between;
+            "
+          >
+            <div class="form-group">
+              <label for="name">Tên sản phẩm</label>
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                id="name"
+                name="name"
+                placeholder="Tên sản phẩm"
+              />
             </div>
-          </div>
+            <div class="form-group">
+              <label for="idCate" style="display: block;">Loại sản phẩm</label>
+              <select
+                style="border: solid 2px #e9d3ff;display: inline-block;width: 48%;"
+                class="form-control form-control-sm"
+                id="idCate"
+                name="idCate"
+              >
+                <option value selected>Chọn loại sản phẩm</option>
+                <% cates.map((cate,index)=>{ %>
+                <option value="<%=cate.id%>"><%=cate.name%></option>
+                <%})%>
+              </select>
+              <select
+                style="border: solid 2px #e9d3ff;display: inline-block;width: 48%;"
+                class="form-control form-control-sm"
+                id="idCateSub"
+                name="cate_sub"
+              >
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="price">Giá</label>
+              <input
+                type="number"
+                class="form-control form-control-sm"
+                id="price"
+                name="price"
+                placeholder="Giá sản phẩm"
+              />
+              <div class="add-child" style="position: relative;margin-top: 10px;">
+                <h6>Thêm màu sắc, size, số lượng</h6>
+                <div class="flex-align-center">
+                  <input
+                    type="color"
+                    class="product-color"
+                    id="colorPicker"
+                    name="color"
+                  />
+                  <input
+                    type="text"
+                    class="product-size form-control form-control-sm inline-block"
+                    name="size"
+                    placeholder="Nhập size"
+                  />
+                  <input
+                    type="number"
+                    class="form-control form-control-sm inline-block product-quantity"
+                    name="quantity"
+                    placeholder="Nhập số lượng"
+                  />
+                </div>
+                <span
+                  id="add-row"
+                  class="mdi mdi-plus-circle"
+                  style="
+                    font-size: 24px;
+                    cursor: pointer;
+                    color: #e9d3ff;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                  "
+                >
+                </span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="desc">Mô tả sản phẩm</label>
+              <textarea
+                class="form-control form-control-sm"
+                id="desc"
+                name="desc"
+                rows="10"
+                placeholder="Mô tả sản phẩm"
+              ></textarea>
+            </div>
+            <div class="form-group" style="width: 100%;">
+              <label for="file-img">Tải ảnh lên</label>
+              <input
+                type="file"
+                name="img"
+                id="file-img"
+                multiple
+                style="display: none"
+              />
+              <div id="imgs"></div>
+            </div>
+
+            <div
+              style="display: flex; justify-content: center; margin-top: 40px;width: 100%;"
+            >
+              <button type="submit" class="btn btn-gradient-primary me-2">
+                Thêm mới
+              </button>
+              <button class="btn btn-light">Cancel</button>
+            </div>
+          </form>
         </div>
       </div>
+    </div>
   </div>
-  <%- include('../partials/footer.ejs')%>
+</div>
+<%- include('../partials/footer.ejs')%>

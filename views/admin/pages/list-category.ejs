@@ -12,7 +12,6 @@
                                         <th>STT</th>
                                         <th>Tên danh mục</th>
                                         <th>Mô tả danh mục</th>
-                                        <th>Số lượng sản phẩm</th>
                                         <th>Ngày tạo</th>
                                         <th>Ngày cập nhật</th>
                                         <th></th>
@@ -28,16 +27,13 @@
                                                 <%= cate.name %>
                                             </td>
                                             <td>
-                                                <%= cate.desc %>
+                                                <%= cate.description %>
                                             </td>
                                             <td>
-                                                <%= cate.count %>
+                                                <%= cate.created_at %>
                                             </td>
                                             <td>
-                                                <%= cate.date_cre %>
-                                            </td>
-                                            <td>
-                                                <%= cate.date_up %>
+                                                <%= cate.updated_at %>
                                             </td>
                                             <td>
                                                 <i data-id="<%= cate.id %>" class="mdi mdi-delete-forever"

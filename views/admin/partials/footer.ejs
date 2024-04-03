@@ -8,11 +8,24 @@
   </div>
 </footer>
 </div>
-<script src="/asset/vendors/js/vendor.bundle.base.js"></script>
+<div id="customAlert-custom" class="overlay-custom" style="display: none;">
+  <div class="alert-box-custom">
+    <p>Bạn có muốn xóa.</p>
+    <button id="btn-delete" >Xóa</button>
+    <button class="alert-button-custom" onclick="closeAlert()">Đóng</button>
+  </div>
+</div>
+
+<script>
+function closeAlert() {
+  document.getElementById('customAlert-custom').style.display = 'none';
+}
+</script>
+<script src="/admin/asset/vendors/js/vendor.bundle.base.js"></script>
 <script src="/admin/admin.js"></script>
-<script src="/asset/js/off-canvas.js"></script>
-<script src="/asset/js/hoverable-collapse.js"></script>
-<script src="/asset/js/misc.js"></script>
+<script src="/admin/asset/js/off-canvas.js"></script>
+<script src="/admin/asset/js/hoverable-collapse.js"></script>
+<script src="/admin/asset/js/misc.js"></script>
 </body>
 
 </html>

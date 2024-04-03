@@ -1,12 +1,139 @@
 <%- include('../partials/header.ejs')%>
 
-    <div class="container-fluid page-body-wrapper">
-        <%- include('../partials/sidebar.ejs')%>
-            <div class="main-panel">
-                <div class="content-wrapper">
-                </div>
-            </div>
-    </div>
-    <%- include('../partials/footer.ejs')%>
+<div class="container-fluid page-body-wrapper">
+  <%- include('../partials/sidebar.ejs',{account:global?.account})%>
+  <div class="main-panel">
+    <div class="content-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <div style="width: 80%; margin: 50px auto">
+            <h2 style="text-align: center">Chọn chức năng</h2>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px;
+              "
+            >
+              <div
+                style="
+                  width: calc(33.33% - 20px);
+                  margin-bottom: 20px;
+                  padding: 20px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  text-align: center;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <h2
+                  style="
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    color: #b66dff;
+                  "
+                >
+                  Quản lý sản phẩm
+                </h2>
+                <a
+                  href="/admin/list-product"
+                  style="
+                    text-align: center;
+                    padding: 10px 0;
+                    text-decoration: none;
+                  "
+                  >Danh sách</a
+                >
+                <p style="margin-top: 5px;"></p>
+                <a
+                  href="/admin/add-product"
+                  style="
+                    text-align: center;
+                    padding: 10px 0;
+                    text-decoration: none;
+                  "
+                  >Thêm mới</a
+                >
+              </div>
 
-        
+              <div
+                style="
+                  width: calc(33.33% - 20px);
+                  margin-bottom: 20px;
+                  padding: 20px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  text-align: center;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <h2
+                  style="
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    color: #b66dff;
+                  "
+                >
+                  Quản lý danh mục
+                </h2>
+                <a
+                  href="/admin/list-category"
+                  style="
+                    text-align: center;
+                    padding: 10px 0;
+                    text-decoration: none;
+                  "
+                  >Danh sách</a
+                >
+                <p style="margin-top: 5px;"></p>
+                <a
+                  href="/admin/add-category"
+                  style="
+                    text-align: center;
+                    padding: 10px 0;
+                    text-decoration: none;
+                  "
+                  >Thêm mới</a
+                >
+              </div>
+
+              <div
+                style="
+                  width: calc(33.33% - 20px);
+                  margin-bottom: 20px;
+                  padding: 20px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  text-align: center;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <h2
+                  style="
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    color: #b66dff;
+                  "
+                >
+                  Quản lý tài khoản
+                </h2>
+                <a
+                  href="/admin/list-user"
+                  style="
+                    text-align: center;
+                    padding: 10px 0;
+                    text-decoration: none;
+                  "
+                  >Danh sách</a
+                >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../partials/footer.ejs')%>
