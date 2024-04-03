@@ -1,1 +1,1 @@
-{"account":{"id":"47a16219-ede9-11ee-992a-a44cc861","username":"admin","password":"12","role":"admin","phone":"0866498358","email":"admin@gmail.com","avatar":"undefined"}}
+{"account":{"id":"8e23e660-f16d-11ee-9a25-a44cc861","username":"admin","password":"12","role":"admin","phone":"0987992000","email":"adf@gmail.com","avatar":"img-0.5636923820032664.png"}}

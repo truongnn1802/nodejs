@@ -14,7 +14,11 @@ exports.handleSubmit = (req, res, next) => {
         data: data[0],
       });
     } else {
-      res.redirect("/");
+      res.status(200).json({
+        message: "Tài khoản không tồn tại",
+        status: 200,
+        data: null,
+      });
     }
   });
 };
