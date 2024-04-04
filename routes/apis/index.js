@@ -15,4 +15,5 @@ module.exports = {
   favoritesRouteApi,
   feedbacksApi,
   ordersRoutes,
+  productVariantsRoutes
 };

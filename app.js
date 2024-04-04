@@ -18,7 +18,8 @@ const {
   favoritesRouteApi,
   loginRouteApi,
   feedbacksApi,
-  ordersRoutes
+  productVariantsRoutes,
+  ordersRoutes,
 } = require("./routes/apis/index.js");
 const { getFile } = require("./util/globalValueFile.js");
 
@@ -44,7 +45,7 @@ const renderRoutes = (path, routes) => {
 };
 
 renderRoutes("/", [loginRoutes, registerRoutes]);
-renderRoutes("/admin", [categoriesRoute, productsRoute,usersRoute]);
+renderRoutes("/admin", [categoriesRoute, productsRoute, usersRoute]);
 renderRoutes("/apis", [
   usersRouteApi,
   productsRouteApi,
@@ -52,7 +53,8 @@ renderRoutes("/apis", [
   favoritesRouteApi,
   loginRouteApi,
   feedbacksApi,
-  ordersRoutes
+  ordersRoutes,
+  productVariantsRoutes,
 ]);
 renderRoutes("/client", [clientRoutes]);
 

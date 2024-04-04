@@ -27,7 +27,7 @@ h6 {
   left: 0;
   right: 0;
   padding: 15px;
-  background-color: #edbaf1;
+  background-color: #5fbfff;
   color: #fff;
   margin: 20px auto;
   width: 300px;
@@ -111,7 +111,7 @@ ol {
   bottom: -4px;
   height: 2px;
   width: 70px;
-  background: #edbaf1;
+  background: #5fbfff;
   content: "";
 }
 
@@ -147,13 +147,13 @@ ol {
   font-weight: 600;
   padding: 12px 30px 10px;
   color: #ffffff;
-  background: #edbaf1;
+  background: #5fbfff;
 }
 
 .site-btn {
   font-size: 14px;
   color: #ffffff;
-  background: #edbaf1;
+  background: #5fbfff;
   font-weight: 600;
   border: none;
   text-transform: uppercase;
@@ -310,7 +310,6 @@ ol {
 }
 
 .header__logo {
-  padding: 26px 0;
 }
 
 .header__logo a {
@@ -399,7 +398,7 @@ ol {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background: #ca1515;
+  background: #5fbfff;
   content: "";
   -webkit-transition: all, 0.5s;
   -o-transition: all, 0.5s;
@@ -430,7 +429,7 @@ ol {
   margin-right: 0;
 }
 .header__right__auth a:last-child:hover {
-  color: #edbaf1;
+  color: #5fbfff;
 }
 
 .header__right__auth a:last-child:after {
@@ -480,7 +479,7 @@ ol {
   top: -11px;
   height: 18px;
   width: 18px;
-  background: #edbaf1;
+  background: #5fbfff;
   font-size: 10px;
   font-weight: 500;
   color: #ffffff;
@@ -507,7 +506,7 @@ ol {
 
 .banner__text span {
   font-size: 18px;
-  color: #ca1515;
+  color: #5fbfff;
   text-transform: uppercase;
 }
 
@@ -534,7 +533,7 @@ ol {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: #ca1515;
+  background: #5fbfff;
   content: "";
 }
 
@@ -560,7 +559,7 @@ ol {
 }
 
 .banner__slider.owl-carousel .owl-dots button.active {
-  background: #edbaf1;
+  background: #5fbfff;
 }
 
 .banner__slider.owl-carousel .owl-dots button:last-child {
@@ -658,7 +657,7 @@ ol {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: #ca1515;
+  background: #5fbfff;
   content: "";
 }
 
@@ -691,14 +690,14 @@ ol {
 
 .discount__text__title h2 {
   font-size: 60px;
-  color: #ca1515;
+  color: #5fbfff;
   font-family: "Cookie", cursive;
   line-height: 46px;
   margin-bottom: 10px;
 }
 
 .discount__text__title h5 {
-  color: #ca1515;
+  color: #5fbfff;
   font-weight: 700;
 }
 
@@ -754,7 +753,7 @@ ol {
 
 .services__item i {
   font-size: 36px;
-  color: #ca1515;
+  color: #5fbfff;
   position: absolute;
   left: 0;
   top: 4px;
@@ -841,7 +840,7 @@ ol {
 
 .footer {
   padding-top: 55px;
-  background-color: #edbaf1;
+  background-color: #5fbfff;
 }
 
 .footer__about {
@@ -973,11 +972,11 @@ ol {
 }
 
 .footer__copyright__text i {
-  color: #ca1515;
+  color: #5fbfff;
 }
 
 .footer__copyright__text a:hover {
-  color: #ca1515;
+  color: #5fbfff;
 }
 
 /*---------------------
@@ -1078,7 +1077,7 @@ ol {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: #ca1515;
+  background: #5fbfff;
   content: "";
 }
 
@@ -1120,7 +1119,7 @@ ol {
   width: 40px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(237, 186, 241, 0.5);
+  background-color: rgba(95, 191, 255, 0.5);
   border-radius: 50%;
   color: #fff;
 }
@@ -1159,7 +1158,7 @@ ol {
   bottom: -4px;
   height: 2px;
   width: 100%;
-  background: #ca1515;
+  background: #5fbfff;
   content: "";
   opacity: 0;
 }
@@ -1176,7 +1175,7 @@ ol {
 
 .product__item:hover {
   border: none;
-  box-shadow: 0 4px 8px 0 rgba(237, 186, 241, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(95, 191, 255);
 }
 
 .product__item:hover .product__hover li {
@@ -1185,11 +1184,11 @@ ol {
 }
 
 .product__item.sale .product__item__pic .label {
-  background: #ca1515;
+  background: #5fbfff;
 }
 
 .product__item.sale .product__item__text .product__price {
-  color: #ca1515;
+  color: #5fbfff;
 }
 
 .product__item__pic {
@@ -1223,7 +1222,7 @@ ol {
 }
 
 .product__item__pic .label.sale {
-  background: #ca1515;
+  background: #5fbfff;
 }
 
 .product__hover {
@@ -1266,7 +1265,7 @@ ol {
 }
 
 .product__hover li:hover a {
-  background: #edbaf1;
+  background: #5fbfff;
 }
 
 .product__hover li:hover a span {
@@ -1303,7 +1302,7 @@ ol {
 }
 
 .product__hover li .active-favorites {
-  background-color: #edbaf1;
+  background-color: #5fbfff;
 }
 .active-favorites .icon_heart_alt {
   color: #ffffff;
@@ -1320,7 +1319,7 @@ ol {
 }
 
 .product__item:hover .product__item__text h6 a {
-  color: #edbaf1;
+  color: #5fbfff;
 }
 
 .product__item__text .rating {
@@ -1375,7 +1374,7 @@ ol {
   border: none;
   border-radius: 0;
   padding-bottom: 12px;
-  border-bottom: 1px solid #edbaf1 !important;
+  border-bottom: 1px solid #5fbfff !important;
   margin-bottom: 12px;
 }
 
@@ -1424,7 +1423,7 @@ ol {
   line-height: 30px;
 }
 .categories__accordion .card-body li a:hover {
-  color: #edbaf1;
+  color: #5fbfff;
 }
 
 .sidebar__filter {
@@ -1448,13 +1447,13 @@ ol {
   font-weight: 700;
   display: inline-block;
   padding: 5px 16px 5px 24px;
-  border: 2px solid #edbaf1;
+  border: 2px solid #5fbfff;
   border-radius: 2px;
 }
 
 .sidebar__filter a:hover {
   color: #fff;
-  background-color: #edbaf1;
+  background-color: #5fbfff;
 }
 
 .filter-range-wrap .range-slider .price-input {
@@ -1501,14 +1500,14 @@ ol {
   height: 14px;
   width: 14px;
   border-radius: 50%;
-  background: #edbaf1;
+  background: #5fbfff;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
 .filter-range-wrap .price-range .ui-slider-range {
-  background: #edbaf1;
+  background: #5fbfff;
   border-radius: 0;
 }
 
@@ -1546,12 +1545,12 @@ ol {
 
 .sidebar__sizes .size__list label input:checked ~ .checkmark,
 .sidebar__color .size__list label input:checked ~ .checkmark {
-  border-color: #edbaf1;
+  border-color: #5fbfff;
 }
 
 .sidebar__sizes .size__list label input:checked ~ .checkmark:after,
 .sidebar__color .size__list label input:checked ~ .checkmark:after {
-  border-color: #edbaf1;
+  border-color: #5fbfff;
   opacity: 1;
 }
 
@@ -1562,7 +1561,7 @@ ol {
   top: 4px;
   height: 10px;
   width: 10px;
-  border: 1px solid #edbaf1;
+  border: 1px solid #5fbfff;
   border-radius: 2px;
 }
 
@@ -1590,7 +1589,7 @@ ol {
   display: inline-block;
   height: 40px;
   width: 40px;
-  border: 1px solid #edbaf1;
+  border: 1px solid #5fbfff;
   border-radius: 50%;
   font-size: 14px;
   color: #111111;
@@ -1613,8 +1612,8 @@ ol {
 
 .pagination__option a:hover,
 .pagination__option .active {
-  background: #edbaf1;
-  border-color: #edbaf1;
+  background: #5fbfff;
+  border-color: #5fbfff;
   color: #ffffff;
   cursor: pointer;
 }
@@ -1738,7 +1737,7 @@ ol {
 .product__details__price {
   font-size: 30px;
   font-weight: 600;
-  color: #ca1515;
+  color: #5fbfff;
   margin-bottom: 30px;
 }
 
@@ -2134,7 +2133,7 @@ ol {
 }
 
 .shop__cart__table thead {
-  border-bottom: 1px solid #edbaf1;
+  border-bottom: 1px solid #5fbfff;
 }
 
 .shop__cart__table thead th {
@@ -2146,7 +2145,7 @@ ol {
 }
 
 .shop__cart__table tbody tr {
-  border-bottom: 1px solid #edbaf1;
+  border-bottom: 1px solid #5fbfff;
 }
 
 .shop__cart__table tbody tr td {
@@ -2191,7 +2190,7 @@ ol {
 
 .shop__cart__table tbody tr .cart__price {
   font-size: 16px;
-  color: #ca1515;
+  color: #5fbfff;
   font-weight: 600;
   width: 190px;
 }
@@ -2208,18 +2207,18 @@ ol {
 }
 
 .shop__cart__table tbody tr .cart__quantity .pro-qty input {
-  color: #edbaf1;
+  color: #5fbfff;
 }
 
 .shop__cart__table tbody tr .cart__quantity .pro-qty .qtybtn {
   font-size: 16px;
-  color: #edbaf1;
+  color: #5fbfff;
   font-weight: 500;
 }
 
 .shop__cart__table tbody tr .cart__total {
   font-size: 16px;
-  color: #ca1515;
+  color: #5fbfff;
   font-weight: 600;
   width: 150px;
 }
@@ -2231,7 +2230,7 @@ ol {
 .shop__cart__table tbody tr .cart__close span {
   height: 45px;
   width: 45px;
-  color: #edbaf1;
+  color: #5fbfff;
   border-radius: 50%;
   font-size: 18px;
   background-color: #fff;
@@ -2244,7 +2243,7 @@ ol {
 
 .shop__cart__table tbody tr .cart__close span:hover {
   color: #fff;
-  background-color: #edbaf1;
+  background-color: #5fbfff;
 }
 
 .cart__btn {
@@ -2266,7 +2265,7 @@ ol {
 }
 
 .cart__btn a span {
-  color: #ca1515;
+  color: #5fbfff;
   font-size: 14px;
   margin-right: 5px;
 }
@@ -2288,7 +2287,7 @@ ol {
 .discount__content form input {
   height: 52px;
   width: 100%;
-  border: 1px solid #edbaf1;
+  border: 1px solid #5fbfff;
   border-radius: 50px;
   padding-left: 30px;
   padding-right: 115px;
@@ -2348,7 +2347,7 @@ ol {
 }
 
 .cart__total__procced ul li span {
-  color: #ca1515;
+  color: #5fbfff;
   float: right;
 }
 
@@ -2374,7 +2373,7 @@ ol {
   color: #444444;
   padding: 14px 0;
   background: #f5f5f5;
-  border-top: 2px solid #edbaf1;
+  border-top: 2px solid #5fbfff;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -2386,14 +2385,14 @@ ol {
 
 .coupon__link span {
   font-size: 14px;
-  color: #ca1515;
+  color: #5fbfff;
 }
 
 .checkout__form h5 {
   color: #111111;
   font-weight: 600;
   text-transform: uppercase;
-  border-bottom: 1px solid #edbaf1;
+  border-bottom: 1px solid #5fbfff;
   padding-bottom: 10px;
   margin-bottom: 25px;
 }
@@ -2405,7 +2404,7 @@ ol {
 }
 
 .checkout__form .checkout__form__input p span {
-  color: #ca1515;
+  color: #5fbfff;
 }
 
 .checkout__form .checkout__form__input input {
@@ -2459,7 +2458,7 @@ ol {
 }
 
 .checkout__form .checkout__form__checkbox label input:checked ~ .checkmark {
-  border-color: #ca1515;
+  border-color: #5fbfff;
 }
 
 .checkout__form
@@ -2467,7 +2466,7 @@ ol {
   label
   input:checked
   ~ .checkmark:after {
-  border-color: #ca1515;
+  border-color: #5fbfff;
   opacity: 1;
 }
 
@@ -2506,7 +2505,7 @@ ol {
 }
 
 .checkout__order h5 {
-  border-bottom: 1px solid #edbaf1;
+  border-bottom: 1px solid #5fbfff;
   margin-bottom: 18px;
 }
 
@@ -2515,7 +2514,7 @@ ol {
 }
 
 .checkout__order__product {
-  border-bottom: 1px solid #edbaf1;
+  border-bottom: 1px solid #5fbfff;
   padding-bottom: 22px;
 }
 
@@ -2556,7 +2555,7 @@ ol {
 
 .checkout__order__total {
   padding-top: 12px;
-  border-bottom: 1px solid #edbaf1;
+  border-bottom: 1px solid #5fbfff;
   padding-bottom: 10px;
   margin-bottom: 25px;
 }
@@ -2595,11 +2594,11 @@ ol {
 }
 
 .checkout__order__widget label input:checked ~ .checkmark {
-  border-color: #edbaf1;
+  border-color: #5fbfff;
 }
 
 .checkout__order__widget label input:checked ~ .checkmark:after {
-  border-color: #edbaf1;
+  border-color: #5fbfff;
   opacity: 1;
 }
 
@@ -2609,7 +2608,7 @@ ol {
   top: 4px;
   height: 12px;
   width: 12px;
-  border: 2px solid #edbaf1;
+  border: 2px solid #5fbfff;
   border-radius: 2px;
 }
 
@@ -2629,11 +2628,11 @@ ol {
 }
 
 input.search {
-  border-color: #edbaf1;
-  outline: #edbaf1;
+  border-color: #5fbfff;
+  outline: #5fbfff;
 }
 
 input.search:focus {
-  border-color: #edbaf1;
-  outline: #edbaf1;
+  border-color: #5fbfff;
+  outline: #5fbfff;
 }
